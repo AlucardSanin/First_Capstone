@@ -53,3 +53,5 @@ Give a ⭐️ if you like this project!
 Site design property of Cindy Shin: https://www.behance.net/adagio07
 
 Non-profit site, just for educational purpose.
+
+https://creativecommons.org/licenses/by-nc/4.0/
