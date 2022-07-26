@@ -4,10 +4,6 @@
     src: url(Fonts/cocogoose_pro-trial-webfont.woff2);    
 }
 
-body{
-    margin: 0;
-}
-
 .navbar{
    position: sticky;
    padding: 5px;
@@ -44,8 +40,8 @@ body{
 
 .header p{
     background-color: rgb(240, 240, 240);
-    width: 90%;
-    margin-inline:5% ;
+    width: 95%;
+    margin-inline:2.5% ;
     border: 3px solid white; 
     font-family: 'Lato', sans-serif;   
 }
@@ -83,5 +79,136 @@ h2,h4{
     margin: 0;
 }
 
+#program{
+    background-image: url(Images/Abstract-Patterns-High-Quality-Gray-Background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+}
 
+#lft{
+    text-align: right;
+    color:#EC5242;
+    font-size: 18px;  
+    font-weight: bold;
+    width: 40%;
+    text-align: right;  
+}
+.plist{       
+    width: 90%;
+    margin-inline: 5%;
+    padding-left: 0px;
+    font-family: 'Lato', sans-serif;   
+}
 
+.plist #f{
+    background-image: url(Images/Icons/conjunto-de-botones-de-xbox.png);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: top 50% left 1%;
+}
+.plist #s{
+    background-image: url(Images/Icons/control-de-juego-con-joystick.png);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: top 50% left 1%;
+}
+.plist #t{
+    background-image: url(Images/Icons/objetivo-del-juego-de-disparos.png);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: top 50% left 1%;
+}
+.plist #fr{
+    background-image: url(Images/Icons/disco-de-forma-circular-negra.png);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: top 50% left 1%;
+}
+.plist #ff{
+    background-image: url(Images/Icons/supervisar-el-teclado-y-el-mouse.png);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: top 50% left 1%;
+}
+#program li{    
+    display: flex;    
+    color: rgb(226, 226, 226);
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(240, 240, 240, 0.2);
+    gap: 15px;            
+}
+
+#program li #rgt{
+width: 60%;
+}
+
+li:not(:last-child) { 
+    margin-bottom: 10px;  
+ }
+
+.btn{
+    margin-top: 10px;
+    width: 60%;    
+    background-color: #EC5242;    
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    margin-inline: 15%;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.btn:hover{
+    background-color: #f17668;
+}
+
+#program h4{
+    color: white;
+    text-align: center;
+    margin-top: 7%;
+    background: url(Images/underline.png) bottom no-repeat;
+    padding-bottom: 10px;
+    background-size: 10%;            
+}
+
+.partners{
+    width: 100%;
+    height: 300px;
+    background-image: url(Images/Partners/partners.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.partners h4{
+    display: flex;
+    color: white;
+    justify-content: center;
+    padding-top: 10px;
+    background: url(Images/underline.png) bottom no-repeat;
+    padding-bottom: 10px;  
+    background-size: 15%;    
+}
+
+.copyrights{
+    padding-top: 20px;
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    display: flex; 
+    justify-content: center; 
+    justify-content: space-around; 
+    align-items: center;   
+}
+
+.copyrights p{
+    width: 50%;
+    font-family: 'Lato', sans-serif;
+}
+
+.copyrights img{
+    width: 50%;
+}
