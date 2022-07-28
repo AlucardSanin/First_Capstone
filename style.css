@@ -1,16 +1,13 @@
-@font-face {
-    font-family: 'CocoGoose';
-    src: url(Fonts/cocogoose_pro-trial-webfont.woff);
-    src: url(Fonts/cocogoose_pro-trial-webfont.woff2);    
-}
+@import url('http://fonts.cdnfonts.com/css/cocogoose');
 
-.navbar{
+.navbar{   
    position: sticky;
-   padding: 5px;
+   padding: 5px;    
    top: 0;   
-}
-   
-.nav-links{
+} 
+
+
+.navbar a{
     display: none;
     float: inline-end;
 }
@@ -31,6 +28,7 @@
 }
 
 #bg-about{
+    background-color: #f4f4f4;
     background-image: url(Images/graybg-ABOUT.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -40,7 +38,8 @@
     display: flex;
     flex-direction: column;
     column-gap: 200px;
-    margin-inline: 5%;     
+    margin-inline: 5%;
+    height: 600px;         
 }
 
 .main p{
@@ -49,6 +48,11 @@
     margin-inline:2.5% ;
     border: 3px solid white; 
     font-family: 'Lato', sans-serif;   
+    line-height: 40px;
+}
+
+.about{
+    justify-content: center;   
 }
 
 .about #sup_text{
@@ -58,7 +62,28 @@
     border: 1px solid rgb(177, 177, 177); 
     font-family: 'Lato', sans-serif;
     padding: 10px; 
-    margin-bottom: 0px;  
+    margin-top: 50px;
+    line-height: 30px;  
+}
+
+.about #suptext2{
+    width: 60%;
+    margin-inline: 20%;
+}
+
+.about h3{
+    align-self: center;
+}
+
+.about #sup_text_desk{
+    display: none;
+    background-color: white;
+    width: 90%;
+    margin-inline:2.5% ;
+    border: 1px solid rgb(177, 177, 177); 
+    font-family: 'Lato', sans-serif;
+    padding: 10px; 
+     
 }
 
 a{
@@ -72,8 +97,7 @@ a:hover {
 .about p{
     width: 100%;
     text-align: center;
-    font-family: 'Lato', sans-serif;
-    font-size: small;
+    font-family: 'Lato', sans-serif;    
     margin-bottom: 30px;
 }
 
@@ -90,7 +114,7 @@ a:hover {
    background-image: url(Images/h1bg.jpg);
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;   
-   font-size: 45px;
+   font-size: 50px;
    text-transform: uppercase;
    font-weight: 400;
    font-family: 'CocoGoose', sans-serif;
@@ -101,11 +125,11 @@ a:hover {
 
 .about h1{
     color: #EC5242;      
-    font-size: 30px;
+    font-size: 50px;
     text-transform: uppercase;
     font-weight: 400;
     font-family: 'CocoGoose', sans-serif;
-    line-height: 38px;
+    line-height: 48px;
     margin-top: 20px;
     margin-bottom: 0px; 
     text-align: center;
@@ -115,7 +139,8 @@ a:hover {
 h3{
     color: #EC5242;
     font-family: 'Lato', sans-serif;
-    margin: 0;    
+    margin: 0;
+    font-weight: 100;    
 }
 
 h2,h4{
@@ -196,8 +221,7 @@ li:not(:last-child) {
  }
 
 .btn{
-    margin-top: 10px;
-    width: 60%;    
+    margin-top: 10px;      
     background-color: #EC5242;    
     color: white;
     padding: 15px 20px;
@@ -264,14 +288,14 @@ li:not(:last-child) {
 
 .past p{
     text-align: center;
-    font-family: 'Lato', sans-serif;
-    font-size: small;      
+    font-family: 'Lato', sans-serif;      
 }
 
 .past h3{
     text-align: center;
     color: white;
     font-size: xx-large;
+    font-family: 'CocoGoose', sans-serif;
 }
 
 .old1{
@@ -280,10 +304,10 @@ li:not(:last-child) {
     justify-content: center;
     background-image: url(Images/lbaa1.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     box-shadow: inset 0 0 0 100px rgba(236, 82, 66, 0.74);
-    width: 80%;
-    height: 150px; 
+    width: 35%;
+    height: 200px; 
     color: white;    
 }
 
@@ -293,11 +317,19 @@ li:not(:last-child) {
     justify-content: center;
     background-image: url(Images/lbaa2.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     box-shadow: inset 0 0 0 100px rgba(236, 82, 66, 0.74);
-    width: 80%;
-    height: 150px; 
+    width: 35%;
+    height: 200px; 
     color: white;     
+}
+
+.oldcont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    row-gap: 15px;
 }
 
 footer{
@@ -307,11 +339,13 @@ footer{
 }
 
 .partners{
+    background-color: #272a31;
     width: 100%;
     height: 300px;
     background-image: url(Images/Partners/partners.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: auto 100%;
+    background-position: top left 50%;
 }
 
 .partners h4{
@@ -325,21 +359,302 @@ footer{
 }
 
 .copyrights{
-    padding-top: 20px;
+    padding-block: 5%;
     background-color: white;
     width: 100%;
     height: 100px;
     display: flex; 
-    justify-content: center; 
-    justify-content: space-around; 
-    align-items: center;   
+    justify-content: center;   
+    align-items: center;    
 }
 
-.copyrights p{
-    width: 50%;
+.copyrights p{   
     font-family: 'Lato', sans-serif;
 }
 
-.copyrights img{
-    width: 50%;
+.topbar{
+    display: none;
 }
+
+.twitter{
+    background: url(Images/Icons/twiticon.png);
+    background-size: 100%;
+    background-repeat: no-repeat;    
+    height: 20px;
+    width: 20px;
+    display: inline-block;    
+}
+
+.facebook{
+    background: url(Images/Icons/faceicon.png);
+    background-size: 40%;
+    background-repeat: no-repeat;    
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+}
+
+.WP{
+    display: none;
+}
+
+
+@media only screen and  (min-width: 768px){
+    .topbar{
+        display: inline-block;
+        background-color:#424242;
+        width: 100%;        
+        padding-block: 7px;
+        text-align: end;
+    }
+    
+    .topbar a{        
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        padding: 5px 10px;  
+        font-family: 'Lato', sans-serif;           
+    }
+
+    .navbar span{
+        display: none;
+    }          
+    
+    .navbar{
+        display: block;
+        overflow: hidden;
+        background-color: white;  
+        padding-right: 10%;
+    }
+  
+    .navbar a{
+        display: block;
+        float: right;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        padding: 0px 16px;
+        margin-top: 20px;
+        font-family: 'Lato', sans-serif;
+        margin-inline: 3%;       
+    }
+
+   .s221 {
+        background-image: url(Images/Partners/2.21\ studio.png);
+        background-repeat: no-repeat;
+        background-size:100% 100%; 
+        align-items: center;  
+    }
+
+    .navbar a:hover{
+        color: #EC5242;        
+    }
+
+    #bg{
+        width: 100%;              
+        background-image: url(Images/graybgdesktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .header{
+        align-items: center;
+        height: inherit;
+        justify-content: center;
+        align-items: flex-start;
+        width: 80%;
+        margin-inline: 10%;
+        height: 100vh;   
+    }
+
+    .header h3{
+        font-size: xx-large;
+        
+    }
+
+    .header h1{
+        font-size: 70px;
+        line-height: 70px;
+    }
+
+    .main p{
+        margin-inline: 0%;
+        width: 60%;
+        padding: 20px;
+        font-size: large;
+        margin-bottom: 5%;
+    }
+
+    #headfoot{
+        margin-top: 2%;
+    }
+
+    .main h2{
+        font-size: 50px;
+        font-family: 'CocoGoose', sans-serif;
+        font-weight: 100;
+    }
+
+    .main h4{
+        font-size: xx-large;
+        font-family: 'CocoGoose', sans-serif;
+        font-weight: 100;
+    }
+   .plist{
+    display: flex;
+    gap: 10px;   
+    margin-inline: 15%;
+    width: 70%;      
+   }
+   
+   .plist li{
+    width: 33.33%;    
+    flex-direction: column;
+    justify-content: flex-end;        
+   }
+
+   .plist li:hover{
+    
+    border: 2px solid white;
+   }
+
+   li:not(:last-child) { 
+    margin-bottom: 0px;  
+    }
+
+     .plist #f{   
+    background-position: top 7% left 50%;
+    background-size: 20%;
+    }
+
+    .plist #s{ 
+    background-position: top 7% left 50%;
+    background-size: 20%;
+    }
+
+    .plist #t{ 
+    background-position: top 7% left 50%;
+    background-size: 20%;
+    }
+
+    .plist #fr{
+    background-position: top 7% left 50%;
+    background-size: 20%;
+    } 
+
+    .plist #ff{    
+    background-position: top 7% left 50%;
+    background-size: 20%;   
+    }
+
+    #program li{
+    justify-content: center;
+    text-align: center;
+    gap: 0px;
+    padding-top: 7%; 
+    padding-bottom: 1%;     
+    }
+
+    #program li p{
+    margin: 1%;
+    text-align: center;    
+    }
+
+    #program h4{    
+    margin-top: 3%;   
+    padding-bottom: 10px;
+    background-size: 3%;
+    margin-bottom: 3%;            
+    }
+    .btn{
+        display: none;
+    }
+    
+    .WP{
+        margin-top: 4%;
+        display: block;
+        text-align: center;
+        font-family: 'Lato', sans-serif; 
+        text-decoration: underline;
+        color: white;        
+    }    
+    .partners h4{                
+        background-size: 5%;           
+    }
+    #bg-about{
+        background-color: #f4f4f4;
+        background-image: url(Images/graybgaboutdesktop.jpg);
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+    }
+    
+    .home a{
+        display: block;
+        background-image: url(Images/Partners/2.21\ studio.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 50px;
+        float: left;
+        margin-top: 10px;
+        padding: 0px 16px;        
+    }
+    
+    .about #sup_text{
+        display: none;
+    }
+
+    .about #sup_text_desk{
+        display: block;
+        background-color: white;
+        margin-inline: 15%;
+        width: 70%;        
+        border: 1px solid rgb(177, 177, 177);
+        font-size: medium; 
+        font-family: 'Lato', sans-serif;        
+        margin-bottom: 0px;
+        line-height: 30px;  
+        padding: 3%;
+    }
+
+    .about{
+        row-gap: 5%;
+        align-items: center;
+    }
+
+    .about h3{
+        display: none;
+    }
+
+    .about p{
+        font-size: medium;
+    }
+    
+    .logo  h4{
+        font-size:xx-large
+    }
+    
+    .logo p{
+        font-size: large;
+    }
+
+    .logo img{
+        width: 50%;
+    }
+
+    .past h4{
+        font-size: xx-large;
+    }
+    
+    .past p{
+        font-size: large;
+    }
+
+    .oldcont{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 70%;             
+        column-gap: 15px;
+        margin-bottom: 5%;
+    }
+ }
