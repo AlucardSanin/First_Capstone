@@ -6,6 +6,10 @@
   top: 0;
 }
 
+a {
+  color: black;
+}
+
 .navbar a {
   text-decoration: none;
   font-family: 'Lato', sans-serif;
@@ -71,6 +75,13 @@
   margin-inline: 20%;
 }
 
+h3 {
+  color: #ec5242;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  font-weight: 100;
+}
+
 .about h3 {
   align-self: center;
 }
@@ -85,10 +96,6 @@
   padding: 10px;
 }
 
-a {
-  color: black;
-}
-
 a:hover {
   color: #ec5242;
 }
@@ -98,6 +105,13 @@ a:hover {
   text-align: center;
   font-family: 'Lato', sans-serif;
   margin-bottom: 30px;
+}
+
+h2,
+h4 {
+  color: #424242;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
 }
 
 .header h4 {
@@ -134,20 +148,6 @@ a:hover {
   text-align: center;
 }
 
-h3 {
-  color: #ec5242;
-  font-family: 'Lato', sans-serif;
-  margin: 0;
-  font-weight: 100;
-}
-
-h2,
-h4 {
-  color: #424242;
-  font-family: 'Lato', sans-serif;
-  margin: 0;
-}
-
 #program {
   background-image: url(Images/Abstract-Patterns-High-Quality-Gray-Background.webp);
   background-repeat: no-repeat;
@@ -163,7 +163,6 @@ h4 {
   font-size: 18px;
   font-weight: bold;
   width: 40%;
-  text-align: right;
 }
 
 .plist {
@@ -208,6 +207,10 @@ h4 {
   background-position: top 50% left 1%;
 }
 
+li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 #program li {
   display: flex;
   color: rgb(226, 226, 226);
@@ -219,10 +222,6 @@ h4 {
 
 #program li .rgt {
   width: 60%;
-}
-
-li:not(:last-child) {
-  margin-bottom: 10px;
 }
 
 .btn {
@@ -238,6 +237,38 @@ li:not(:last-child) {
 
 .btn:hover {
   background-color: #f17668;
+}
+
+.card h4,
+.cardh h4 {
+  color: #ec5242;
+  font-style: italic;
+  padding-top: 10px;
+  background: url(Images/gray_underline.png) bottom left no-repeat;
+  padding-bottom: 10px;
+  background-size: 8%;
+}
+
+.logo h4 {
+  background: url(Images/underline.png) bottom no-repeat;
+  padding-bottom: 10px;
+  background-size: 10%;
+}
+
+.past h4 {
+  background: url(Images/underline.png) bottom no-repeat;
+  padding-bottom: 10px;
+  background-size: 10%;
+}
+
+.partners h4 {
+  display: flex;
+  color: white;
+  justify-content: center;
+  padding-top: 10px;
+  background: url(Images/underline.png) bottom no-repeat;
+  padding-bottom: 10px;
+  background-size: 15%;
 }
 
 #program h4 {
@@ -318,16 +349,6 @@ li:not(:last-child) {
   font-size: small;
 }
 
-.card h4,
-.cardh h4 {
-  color: #ec5242;
-  font-style: italic;
-  padding-top: 10px;
-  background: url(Images/gray_underline.png) bottom left no-repeat;
-  padding-bottom: 10px;
-  background-size: 8%;
-}
-
 .button {
   display: flex;
   justify-content: center;
@@ -342,12 +363,6 @@ li:not(:last-child) {
   background-repeat: no-repeat;
   background-position: top 50% right 40%;
   background-size: 5%;
-}
-
-.logo h4 {
-  background: url(Images/underline.png) bottom no-repeat;
-  padding-bottom: 10px;
-  background-size: 10%;
 }
 
 .logo p {
@@ -370,12 +385,6 @@ li:not(:last-child) {
   padding-bottom: 20px;
   border-top: #d1d1d1 1px solid;
   row-gap: 10px;
-}
-
-.past h4 {
-  background: url(Images/underline.png) bottom no-repeat;
-  padding-bottom: 10px;
-  background-size: 10%;
 }
 
 .past p {
@@ -436,16 +445,6 @@ footer {
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: top left 50%;
-}
-
-.partners h4 {
-  display: flex;
-  color: white;
-  justify-content: center;
-  padding-top: 10px;
-  background: url(Images/underline.png) bottom no-repeat;
-  padding-bottom: 10px;
-  background-size: 15%;
 }
 
 .copyrights {
@@ -535,6 +534,17 @@ footer {
     align-items: center;
   }
 
+  .home a {
+    display: block;
+    background-image: url(Images/Partners/2.21\ studio.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 50px;
+    float: left;
+    margin-top: 10px;
+    padding: 0 16px;
+  }
+
   .navbar a:hover {
     color: #ec5242;
   }
@@ -548,9 +558,7 @@ footer {
 
   .header {
     align-items: center;
-    height: inherit;
     justify-content: center;
-    align-items: flex-start;
     width: 80%;
     margin-inline: 10%;
     height: 100vh;
@@ -602,12 +610,12 @@ footer {
     justify-content: flex-end;
   }
 
-  .plist li:hover {
-    border: 2px solid white;
-  }
-
   li:not(:last-child) {
     margin-bottom: 0;
+  }
+
+  .plist li:hover {
+    border: 2px solid white;
   }
 
   .plist #f {
@@ -643,9 +651,38 @@ footer {
     padding-bottom: 1%;
   }
 
+  .about p {
+    font-size: medium;
+  }
+
+  .logo p {
+    font-size: large;
+  }
+
+  .past p {
+    font-size: large;
+  }
+
+  .card p,
+  .cardh p {
+    font-size: medium;
+  }
+
   #program li p {
     margin: 1%;
     text-align: center;
+  }
+
+  .partners h4 {
+    background-size: 5%;
+  }
+
+  .logo h4 {
+    font-size: xx-large;
+  }
+
+  .past h4 {
+    font-size: xx-large;
   }
 
   #program h4 {
@@ -668,26 +705,11 @@ footer {
     color: white;
   }
 
-  .partners h4 {
-    background-size: 5%;
-  }
-
   #bg-about {
     background-color: #f4f4f4;
     background-image: url(Images/graybgaboutdesktop.jpg);
     background-repeat: no-repeat;
     background-size: auto 100%;
-  }
-
-  .home a {
-    display: block;
-    background-image: url(Images/Partners/2.21\ studio.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 50px;
-    float: left;
-    margin-top: 10px;
-    padding: 0 16px;
   }
 
   .about #sup_text {
@@ -716,28 +738,8 @@ footer {
     display: none;
   }
 
-  .about p {
-    font-size: medium;
-  }
-
-  .logo h4 {
-    font-size: xx-large;
-  }
-
-  .logo p {
-    font-size: large;
-  }
-
   .logo img {
     width: 50%;
-  }
-
-  .past h4 {
-    font-size: xx-large;
-  }
-
-  .past p {
-    font-size: large;
   }
 
   .oldcont {
@@ -768,15 +770,15 @@ footer {
     display: flex;
   }
 
-  .btn2 {
-    display: none;
-  }
-
   #Creators {
     flex-direction: row;
     margin-inline: 10%;
     justify-content: center;
     padding-bottom: 10%;
+    column-gap: 5%;
+  }
+
+  .cardh {
     column-gap: 5%;
   }
 
@@ -789,10 +791,6 @@ footer {
     height: 33.33%;
   }
 
-  .cardh {
-    column-gap: 5%;
-  }
-
   .creator-img {
     height: 70%;
     width: fit-content;
@@ -800,11 +798,6 @@ footer {
 
   #CContent {
     justify-content: flex-start;
-  }
-
-  .card p,
-  .cardh p {
-    font-size: medium;
   }
 
   .creators1,
