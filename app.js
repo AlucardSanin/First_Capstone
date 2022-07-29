@@ -95,6 +95,16 @@ const Cards = [
         `;
     }
 
+    const button = document.querySelector('.btn2');
+    const textbtn = document.querySelector('.btn2').textContent;
+
+    if (textbtn == "More"){
+      
+      button.addEventListener('click', () => {
+      document.querySelector('.creators2').style.display = 'flex';
+      document.querySelector('.cardh').style.display = 'flex';
+      });
+    }
     
     function display() {
         document.getElementById('links').style.display = 'flex';

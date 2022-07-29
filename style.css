@@ -60,16 +60,16 @@
     flex-direction: column;
     column-gap: 200px;
     margin-inline: 5%;
-    height: 600px;         
+    height: 500px;         
 }
 
 .main p{
     background-color: rgb(240, 240, 240);
-    width: 95%;
-    margin-inline:2.5% ;
+    width: 90%;    
     border: 3px solid white; 
     font-family: 'Lato', sans-serif;   
-    line-height: 40px;
+    line-height: 30px;
+    padding: 10px;
 }
 
 .about{
@@ -291,17 +291,13 @@ li:not(:last-child) {
     padding-bottom: 10%;
 }
 
-.card, .cardh{
+.card, .carh{
     display: flex;
     height: auto;
     column-gap: 5%;
 }
 
-.creators2{
-    display: none;
-}
-
-.cardh{
+.creators2, .cardh{
     display: none;
 }
 
@@ -351,7 +347,7 @@ li:not(:last-child) {
     background-image: url(Images/Icons/more-arrow.png);
     background-repeat: no-repeat;
     background-position: top 50% right 40%;
-    background-size: 5%;
+    background-size: 5%;   
 }
 
 .logo h4{
@@ -764,11 +760,62 @@ footer{
     }
     
     .navbar #links{
-    display: none;
+    display: block;
     float: inline-end;
     }
     
     .old1, .old2{
         width: 35%;
     }
+
+    .btn2{
+        display: none;
+    }
+
+    .creators2, .cardh{
+        display: flex;
+    }
+
+    .btn2{
+        display: none;
+    }
+
+    #Creators{
+        flex-direction: row;
+        margin-inline: 10%;
+        justify-content: center;
+        padding-bottom: 10%;
+        column-gap: 5%;
+    }
+
+    .creators2{
+        justify-content: space-around;        
+        padding-bottom: 0%;
+    }
+    .creators2 .cardh{
+        height: 33.33%;        
+    }
+    
+    .cardh{
+        column-gap: 5%;
+    }
+    
+    .creator-img{
+        height: 70%;
+        width: fit-content;
+    }
+
+    #CContent{
+        justify-content: flex-start;        
+    }
+
+    .card p, .cardh p{
+        font-size: medium;
+    }
+
+    .creators1, .creators2{
+        margin-inline: 0%;
+        width: 100%;
+    }
+
  }
