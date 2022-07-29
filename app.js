@@ -96,31 +96,28 @@ const Cards = [
     }
 
     const button = document.querySelector('.btn2');
-    const textbtn = document.querySelector('.btn2').textContent;
+    button.addEventListener('click', () => {
 
+      if (button.textContent.toLocaleLowerCase() === "more") {
     
-      button.addEventListener('click', () => {
-      document.querySelector('.btn2').textContent = "Close";
-      document.querySelector('.btn2').style.backgroundImage = "url('Images/Icons/close-arrow.png')";      
-      document.querySelector('.creators2').style.display = 'flex';      
-      document.querySelectorAll('.cardh').forEach ((element) => {
-      element.style.display = 'flex';
-      });;
+        document.querySelector('.btn2').textContent = "Close";
+        document.querySelector('.btn2').style.backgroundImage = "url('Images/Icons/close-arrow.png')";
+        document.querySelector('.creators2').style.display = 'flex';
+        document.querySelectorAll('.cardh').forEach((element) => {
+          element.style.display = 'flex';
+        });;
+    
+    
+      } else if (button.textContent.toLocaleLowerCase() === "close") {
+    
+        document.querySelector('.btn2').textContent = "More";
+        document.querySelector('.btn2').style.backgroundImage = "url('Images/Icons/close-arrow.png')";
+        document.querySelector('.creators2').style.display = 'none';
+        document.querySelectorAll('.cardh').forEach((element) => {
+          element.style.display = 'none';
+        });;
+    
+      }
     });
     
-    function display() {
-      if (document.querySelector('.material-symbols-outlined').textContent === "menu") {
-        document.getElementById('links').style.display = 'flex';
-        document.querySelector('.material-symbols-outlined').textContent = "Close";
-      } else {
-        hide();
-      }
-    }
-    
-
-    function hide() {
-        document.getElementById('links').style.display= 'none'; 
-        document.querySelector('.material-symbols-outlined').textContent="menu";       
-    }
-    
-    document.querySelector('.material-symbols-outlined').addEventListener('click', display);
+ 
