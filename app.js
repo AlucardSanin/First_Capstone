@@ -98,20 +98,25 @@ const Cards = [
     const button = document.querySelector('.btn2');
     const textbtn = document.querySelector('.btn2').textContent;
 
-    if (textbtn == "More"){
-      
+    
       button.addEventListener('click', () => {
-      document.querySelector('.creators2').style.display = 'flex';
-      document.querySelector('.cardh').style.display = 'flex';
-      });
-    }
+      document.querySelector('.btn2').textContent = "Close";
+      document.querySelector('.btn2').style.backgroundImage = "url('Images/Icons/close-arrow.png')";      
+      document.querySelector('.creators2').style.display = 'flex';      
+      document.querySelectorAll('.cardh').forEach ((element) => {
+      element.style.display = 'flex';
+      });;
+    });
     
     function display() {
+      if (document.querySelector('.material-symbols-outlined').textContent === "menu") {
         document.getElementById('links').style.display = 'flex';
-        document.querySelector('.material-symbols-outlined').textContent="close";
-        document.querySelector('.material-symbols-outlined').addEventListener('click', hide);
-               
+        document.querySelector('.material-symbols-outlined').textContent = "Close";
+      } else {
+        hide();
+      }
     }
+    
 
     function hide() {
         document.getElementById('links').style.display= 'none'; 

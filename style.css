@@ -299,6 +299,7 @@ li:not(:last-child) {
 
 .creators2, .cardh{
     display: none;
+    column-gap: 5%;
 }
 
 .creator-img{
