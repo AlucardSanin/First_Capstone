@@ -217,7 +217,7 @@ li:not(:last-child) {
   align-items: center;
   justify-content: space-around;
   background-color: rgb(240, 240, 240, 0.2);
-  gap: 15px; 
+  gap: 15px;
 }
 
 #program li .rgt {
@@ -490,14 +490,13 @@ footer {
 @media only screen and  (min-width: 768px) {
   .topbar {
     display: flex;
-    background-color: #424242;    
+    background-color: #424242;
     padding-block: 7px;
     width: 100%;
     justify-content: flex-end;
-   
   }
 
-  .topbarcont{
+  .topbarcont {
     padding-right: 20%;
   }
 
@@ -516,7 +515,7 @@ footer {
   .navbar {
     display: flex;
     overflow: hidden;
-    background-color: white;    
+    background-color: white;
     justify-content: space-between;
   }
 
@@ -529,7 +528,6 @@ footer {
     padding: 0 14px;
     margin-top: 20px;
     font-family: 'Lato', sans-serif;
-    
   }
 
   .s221 {
@@ -757,9 +755,9 @@ footer {
   }
 
   .navbar #links {
-   display: flex;
-   padding-right: 30%;   
-   column-gap: 50px;
+    display: flex;
+    padding-right: 30%;
+    column-gap: 50px;
   }
 
   .old1,
@@ -812,7 +810,7 @@ footer {
     width: 100%;
   }
 
-  .partners{
+  .partners {
     background-image: url(Images/Partners/partnersdesktop.jpg);
   }
 }
@@ -839,7 +837,8 @@ footer {
   .copyrights img {
     width: 50%;
   }
-  #program li {    
+
+  #program li {
     height: 150px;
   }
 }
