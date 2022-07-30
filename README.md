@@ -2,12 +2,21 @@
 
 ## Deployment
 
+Live Demo: https://alucardsanin.github.io/First_Capstone/
 
 # Web Page
 
 > Description the project.
 
-Skeleton under construction of a Portfolio website using specific practices for HTML, CSS & JS.
+Building a website from zero, implementing requested features:
+
+Build Home and About page.
+Media query over 768px for Desktop version.
+Mobile menu and links including logo to home page.
+"Featured Speakers" (Creators in my case) are dynamically created through Javascript.
+
+Quick website overview:
+https://www.loom.com/share/bdba1420dd134db5a6a25689fdc19597
 
 ## Built With
 
@@ -22,11 +31,11 @@ Skeleton under construction of a Portfolio website using specific practices for 
 
 ### Prerequisites
  - Web browser and code editor of your choice
- - 
+ 
 ### Setup
 ~~~
 git clone 
-cd portfolio
+cd https://github.com/AlucardSanin/First_Capstone
 ~~~
 
 
@@ -41,6 +50,10 @@ cd portfolio
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+## Feel free to point out any suggestion or issue
+
+https://github.com/AlucardSanin/First_Capstone/issues
 
 ## Acknowledgments
 
